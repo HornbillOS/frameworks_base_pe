@@ -152,6 +152,7 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
                 mBurnInProtectionTimer.schedule(new BurnInProtectionTask(), 0, 60 * 1000);
             } else if (mBurnInProtectionTimer != null) {
                 mBurnInProtectionTimer.cancel();
+                updatePosition();
             }
         }
 
@@ -344,6 +345,7 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
                 super.onDraw(canvas);
             }
         };
+        mPressedView.setImageResource(R.drawable.fod_icon_pressed);
 
         mWindowManager.addView(this, mParams);
 
@@ -462,7 +464,6 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
         dispatchPress();
 
         setImageDrawable(null);
-        mPressedView.setImageResource(R.drawable.fod_icon_pressed);
         invalidate();
     }
 

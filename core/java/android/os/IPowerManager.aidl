@@ -82,7 +82,4 @@ interface IPowerManager
 
     // Forces the system to suspend even if there are held wakelocks.
     boolean forceSuspend();
-
-    // Custom API
-    void wakeUpWithProximityCheck(long time, int reason, String details, String opPackageName);
 }
