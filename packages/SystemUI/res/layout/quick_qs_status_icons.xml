@@ -53,7 +53,6 @@
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         systemui:textAppearance="@style/TextAppearance.QS.Status"
-        android:paddingEnd="2dp"
-        android:visibility="gone"  />
+        android:paddingEnd="2dp" />
 
 </LinearLayout>
