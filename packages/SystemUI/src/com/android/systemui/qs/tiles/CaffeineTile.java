@@ -128,7 +128,7 @@ public class CaffeineTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.HORNS;
+        return MetricsEvent.HORNBILL;
     }
 
     private void startCountDown(long duration) {
