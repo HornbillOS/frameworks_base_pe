@@ -178,7 +178,7 @@ public class QSFactoryImpl implements QSFactory {
             case "powershare":
                 return mPowerShareTileProvider.get();
             case "caffeine":
-                return new CaffeineTile(mHost);    
+                return CaffeineTile(mHost);    
         }
 
         // Intent tiles.
